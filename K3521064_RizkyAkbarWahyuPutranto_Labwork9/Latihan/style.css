@@ -1,0 +1,51 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #001428;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    padding: 5px;
+    background-color: #00568B;
+}
+
+#header {
+    background-color: #00305C;
+}
+
+#testi {
+    background-color: #00305C;
+    height: 80vh;
+}
+
+.kotak {
+    border: 5px solid #001428;
+}
+
+.kanan {
+    height: 50%;
+    background-color: #00305C;
+}
+
+.page-footer {
+    background-color: #00305C;
+    padding: 20px 0;
+}
+
+
+@media (max-width: 767px) {
+    #testi {
+        height: auto;
+    }
+
+    .kanan {
+        height: auto;
+    }
+
+    .page-footer {
+        background-color: #00305C;
+        padding: 5px 0;
+    }
+}

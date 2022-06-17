@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PTIK FKIP UNS</title>
+</head>
+<body>
+	<h1>PTIK FKIP UNS</h1>
+
+	<p>The <span>Faculty of Teacher Training and Education, Sebelas Maret University</span>, Surakarta is an <span>Educational Personnel Education Institution (LPTK)</span> which has 24 study programs in 6 majors. Each study program has its own characteristics in producing <span>superior, strong and intelligent educational staff</span>.</p>
+
+	<p>The <span>Informatics and Computer Technology Education (PTIK)</span> study program is planned to take shelter in the management of the <span>Engineering and Vocational Education (PTK)</span> department. This placement revises our previous statement, where the PTIK study program is under the P.MIPA department. PTIK is a study program that will produce graduates who are <span>prioritized to teach in vocational/vocational programs</span>. So, it would be better if PTIK was under the PTK department which oversees vocational programs such as <span>Building Engineering Education</span>, and <span>Mechanical Engineering Education</span>. To meet the needs of lecturers in the field of information technology that cannot be met by the PTK department, PTIK will conduct <span>resource sharing with the mathematics study program</span>.
+	</p>
+
+	<button value = "off" onclick="highlightText()">Highlight Paragraf</button>
+
+<script type="text/javascript">
+	function highlightText() {
+		const highlight = document.querySelectorAll("span");
+		const change = document.querySelector("button").value;
+		if (change == "off"){
+			document.querySelector("button").value = "on";
+			for (var i = 0; i < highlight.length; i++) {
+    			highlight[i].style.cssText= "color:red; background-color:yellow; font-weight:bold";
+			}
+		} else {
+			document.querySelector("button").value = "off";
+			for (var i = 0; i < highlight.length; i++) {
+    			highlight[i].style.cssText= "";
+			}
+		}
+			 
+	}
+
+</script>
+</body>
+</html>

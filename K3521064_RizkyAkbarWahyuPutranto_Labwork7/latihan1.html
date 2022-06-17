@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kalkulator Sederhana</title>
+</head>
+<body>
+	<h2>Kalkulator Sederhana</h2>
+	<table>
+			<tr>
+				<td>Masukkan angka</td>
+				<td>:</td>
+				<td><input type="number" name="angka1" id="angka1"></td>
+			</tr>
+			<tr>
+				<td>Masukkan angka</td>
+				<td>:</td>
+				<td><input type="number" name="angka2" id="angka2"></td>
+			</tr>
+			<tr>
+				<td>Hasil</td>
+				<td>:</td>
+				<td><input type="number" name="hasil" id="hasil" readonly></td>
+			</tr>
+	</table>
+	<button onclick="reset()">Reset</button><br>
+	Pilih operasi bilangan <br>
+	<button onclick="tambah()">+ Tambah</button>
+	<button onclick="kurang()">- Kurang</button>
+	<button onclick="kali()">* Kali</button>
+	<button onclick="bagi()">/ Bagi</button>
+
+<script type="text/javascript">
+	const angka1 = document.getElementById("angka1");
+	const angka2 = document.getElementById("angka2");
+	const hasil = document.getElementById("hasil");
+
+	function reset() {
+		angka1.value = '';
+		angka2.value = '';
+		hasil.value = '';
+	}
+	function tambah() {
+		hasil.value = Number(angka1.value) + Number(angka2.value);
+	}
+	function kurang() {
+		hasil.value = Number(angka1.value) - Number(angka2.value);
+	}
+	function kali() {
+		hasil.value = Number(angka1.value) * Number(angka2.value);
+	}
+	function bagi() {
+		hasil.value = Number(angka1.value) / Number(angka2.value);
+	}
+	
+</script>
+</body>
+</html>
